@@ -278,6 +278,11 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
