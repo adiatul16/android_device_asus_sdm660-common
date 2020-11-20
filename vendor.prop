@@ -151,3 +151,6 @@ sys.vendor.shutdown.waittime=500
 
 # UBWC
 vendor.video.disable.ubwc=1
+
+# Camera HAL1 Properties
+vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android
