@@ -155,6 +155,9 @@ ro.vendor.sensors.facing=false
 # Shutdown time
 sys.vendor.shutdown.waittime=500
 
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+
 # UBWC
 vendor.video.disable.ubwc=1
 
