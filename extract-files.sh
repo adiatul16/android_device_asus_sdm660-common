@@ -25,6 +25,7 @@ CLEAN_VENDOR=true
 
 SECTION=
 KANG=
+ONLY_DEVICE=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
@@ -33,6 +34,9 @@ while [ "${#}" -gt 0 ]; do
                 ;;
         -k | --kang )
                 KANG="--kang"
+                ;;
+        -d | --only-device )
+                ONLY_DEVICE=false
                 ;;
         -s | --section )
                 SECTION="${2}"; shift
@@ -67,8 +71,10 @@ function blob_fixup() {
 # Initialize the helper for common device
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
+if [ -z "${ONLY_DEVICE}" ] && [ -s "${MY_DIR}/proprietary-files.txt" ]; then 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
+fi
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
