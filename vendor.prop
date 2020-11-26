@@ -125,6 +125,9 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# privapp-permissions whitelisting
+ro.control_privapp_permissions=enforce
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.radio.aosp_usr_pref_sel=true 
