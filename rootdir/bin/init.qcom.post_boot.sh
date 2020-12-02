@@ -2741,6 +2741,13 @@ case "$target" in
             echo 0-3 > /dev/cpuset/system-background/cpus
             echo 0-3 > /dev/cpuset/restricted/cpus
 
+            # Setup final blkio
+            # value for group_idle is us
+            echo 1000 > /dev/blkio/blkio.weight
+            echo 200 > /dev/blkio/background/blkio.weight
+            echo 2000 > /dev/blkio/blkio.group_idle
+            echo 0 > /dev/blkio/background/blkio.group_idle
+
             #if the kernel version >=4.14,use the schedutil governor
             KernelVersionStr=`cat /proc/sys/kernel/osrelease`
             KernelVersionS=${KernelVersionStr:2:2}
