@@ -197,13 +197,13 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib64/libwvhidl.so
 
-# ESE-Powermanager
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
-vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
+# ESE-Powermanager - from LA.UM.8.2.r1-07400-sdm660.0 
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|a5b8d74b2374ea757c90bbbe450e34533fb6c137
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|c03d9380b60a794ababac1c6ec25d4410783bcc9
+vendor/lib/vendor.qti.esepowermanager@1.0.so|af7ba5f64ca2d78004d92a68d4acb927186fc8ab
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|34206c519a4ccd08545921d68db74b22ab3a0a93
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|cb0ddb7f06eb218620aa613dad040307a4b4063b
 
 # FM
 -product/lib/vendor.qti.hardware.fm@1.0.so
