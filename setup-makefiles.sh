@@ -7,6 +7,9 @@
 
 set -e
 
+DEVICE_COMMON=sdm660-common
+VENDOR=asus
+
 INITIAL_COPYRIGHT_YEAR=2020
 
 # Load extract_utils and do some sanity checks
