@@ -7,6 +7,9 @@
 
 set -e
 
+DEVICE_COMMON=sdm660-common
+VENDOR=asus
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
