@@ -10,6 +10,13 @@ set -e
 DEVICE_COMMON=sdm660-common
 VENDOR=asus
 
+# Check host-OS before doing anything
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    PLATFORM='linux-x86'
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    PLATFORM='darwin-x86'
+fi
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -22,6 +29,10 @@ if [ ! -f "${HELPER}" ]; then
     exit 1
 fi
 source "${HELPER}"
+
+# Use prebuilts from tools-lineage
+TOOLS_LINEAGE="$LINEAGE_ROOT"/prebuilts/tools-lineage/"$PLATFORM"/bin
+PATCHELF="$TOOLS_LINEAGE"/patchelf
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
