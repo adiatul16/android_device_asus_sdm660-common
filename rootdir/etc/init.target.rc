@@ -29,15 +29,9 @@
 
 on init
     # Set boottime stune value
-    write /dev/stune/schedtune.prefer_idle 1
-    write /dev/stune/schedtune.boost 100
-
-    write /dev/stune/foreground/schedtune.sched_boost_no_override 1
-    write /dev/stune/top-app/schedtune.sched_boost_no_override 1
-    write /dev/stune/schedtune.colocate 0
-    write /dev/stune/background/schedtune.colocate 0
-    write /dev/stune/foreground/schedtune.colocate 0
-    write /dev/stune/top-app/schedtune.colocate 1
+    write /dev/stune/foreground/schedtune.prefer_idle 1 
+    write /dev/stune/schedtune.boost 5
+    write /dev/stune/top-app/schedtune.prefer_idle 1 
 
     write /sys/devices/virtual/graphics/fb0/idle_time 100
 
@@ -95,6 +89,10 @@ on boot && property:persist.vendor.usb.controller.default=*
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
+
+    chmod 0664 /sys/touchpanel/capacitive_keys
+    chmod 0664 /sys/touchpanel/double_tap
+    chmod 0664 /sys/touchpanel/reversed_keys
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
