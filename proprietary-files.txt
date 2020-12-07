@@ -374,7 +374,6 @@ bin/nvram_btwifi
 lib64/libmmi.so
 
 # Perf - from jasmine V11.0.17.0.QDIMIXM 
-vendor/bin/energy-awareness|6515fada09432a437d2ed591ce141bb70fb10a9e
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|57b1e050c9300a72baff8a19872b5a32ae9122e9
 vendor/bin/msm_irqbalance|e917104fbd26c844d27ffb2b7ec4f665fdfb8b78
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
