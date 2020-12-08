@@ -1,56 +1,56 @@
 # Common proprietary files - from UL-ASUS_X01BD-WW-17.2018.2004.424-user build, unless pinned
 
 # ADSP
-vendor/bin/adsprpcd
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607
+vendor/lib/libadsp_default_listener.so|85bdbaf59256e3a01e3d1bf1f5ac753eea4f935b
+vendor/lib/libadsp_hvx_callback_skel.so|17e18628d5f06f5ad46b9577baac0d3571b42be1
+vendor/lib/libadsp_hvx_stub.so|d3f2bfdf3f6bd4911e5015a022a098582addcf6f
+vendor/lib/libadsprpc.so|35bf7c53dc7149b39126638c5c1bac3b08e262be
+vendor/lib/libfastcvadsp_stub.so|43740cca4f7549c86e4b2ab1daf4d703d9a9b258
+vendor/lib/libfastcvopt.so|77789b2b6e978bcc2ee7e848d6163fc31d6b5393
+vendor/lib/libfastrpc_utf_stub.so|57736a2dbb5555b8e4b00aece6be028eddff818f
+vendor/lib/libmdsprpc.so|caae31754dee7a45267ae3912685773046ab6b47
+vendor/lib/libsdsprpc.so|b78c12ebe73d344af786dd39f1313ec88668aacc
+vendor/lib64/libadsp_default_listener.so|abace257c0ae59ddc693f1e42d16670312673873
+vendor/lib64/libadsprpc.so|02d0684cba8bd52d2a291f85afae9ce343c94bd4
+vendor/lib64/libfastcvadsp_stub.so|ef3fd1a7d1217ad9bfff9cff0aa52db36eb73143
+vendor/lib64/libfastcvopt.so|9f95397d7e1b171f9b00323ed7acc17341200e01
+vendor/lib64/libfastrpc_utf_stub.so|4bdb3be85d07be078325682abd0fc54278290b92
+vendor/lib64/libmdsprpc.so|7aca0cc4524687c48df9e2247a6c59d0be9581bc
+vendor/lib64/libsdsprpc.so|9c3ac49b1a3c7d383c64f7fb554b1c00e2963527
 
 # CDSP
-vendor/bin/cdsprpcd
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
+vendor/bin/cdsprpcd|c9fc5873c205e1ebb844d18bc10f89dd428a01ee
+vendor/lib/libcdsp_default_listener.so|6347d41d3c3704a04ae0f8e816f071057c483163
+vendor/lib/libcdsprpc.so|2774f0faf3728faf425fdeb81b9820a3c231a5ba
+vendor/lib/libsysmon_cdsp_skel.so|0da55092206d94a43a82d5a416969cbfd208acf2
+vendor/lib64/libcdsp_default_listener.so|ebde03266606d634172d41bbc97ba9ebc5606423
+vendor/lib64/libcdsprpc.so|6636d9b8e1c3b80bae94cf1728c5168ef77cca5f
+vendor/lib64/libsysmon_cdsp_skel.so|a76815923b46dbc41ba1a6b0f4942b8da8e52ce0
 
 # ADSP Modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
+vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
+vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
 
-# Alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+# Alarm - from jasmine V11.0.17.0.QDIMIXM
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
+vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
+vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|1e2631850cc97dfedbde50a9d0d55c8d14881b44
+vendor/lib64/vendor.qti.hardware.alarm@1.0.so|271f85f1c6dc0c65dc3aa9a8603f3910fa50e1ea
 
 # ANT+
 -lib/libantradio.so|37c36369eeab19d5e6266d9d25ae0de9bb59502d
